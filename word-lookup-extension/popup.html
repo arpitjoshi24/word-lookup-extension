@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Word Lookup</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <span class="logo">📖</span>
+      <h1>Word Lookup</h1>
+    </header>
+
+    <form id="search-form">
+      <input
+        type="text"
+        id="word-input"
+        placeholder="Type a word…"
+        autocomplete="off"
+        autofocus
+      />
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <div id="status"></div>
+
+    <div id="results" class="results hidden">
+      <h2 id="result-word"></h2>
+
+      <section class="word-section">
+        <h3>Synonyms</h3>
+        <div id="synonyms" class="chip-list"></div>
+      </section>
+
+      <section class="word-section">
+        <h3>Antonyms</h3>
+        <div id="antonyms" class="chip-list"></div>
+      </section>
+    </div>
+
+    <div id="history-wrap">
+      <h3>Recent</h3>
+      <div id="history" class="chip-list history-list"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
