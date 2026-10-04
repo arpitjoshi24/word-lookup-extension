@@ -133,6 +133,45 @@ h1 {
   font-weight: 600;
 }
 
+/* Meaning / definitions */
+.meanings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 170px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.meaning-item {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.meaning-item .pos {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.meaning-item .definition {
+  color: var(--text);
+}
+
+.meaning-item .example {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.meaning-empty {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+}
+
 .chip-list {
   display: flex;
   flex-wrap: wrap;
